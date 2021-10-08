@@ -3,15 +3,18 @@ from human import Human
 
 class Game:
     def __init__(self):
-        #players1
-        #player2?
-        pass
+        self.player_one = Human
+        self.player_two = None
+        
 
     def run_game(self):
-        #call on rules method
-        #call on multiplayer method
-        #while loop to keep track of score?
-        pass
+        self.game_rules()
+        self.multiplayer()
+        
+        while self.player_one.score < 3 and self.player_two.score < 3:
+            self.play()
+
+        self.diaplay_winner()
 
     def game_rules(self):
         print("welcome to Rock, Paper, Scissors, Lizard, Spock, the game of chance")
