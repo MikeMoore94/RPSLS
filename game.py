@@ -29,17 +29,21 @@ class Game:
     def multiplayer(self):
         user_input = input("If you want to play singleplayer press 1 \nFor multiplayer press 2")
         if user_input == "1":
+            self.player_one.name = input("Player 1 , enter your name: ")
             self.player_one = Human()
             self.player_two = AI()
         elif user_input == "2":
+            self.player_one.name = input("Player 1, enter your name")
             self.player_one = Human()
+            self.player_two.name = input("Player 2, enter your name")
             self.player_two = Human()
         else:
             input("please enter 1 for single player or 2 for multiplayer")
 
     def player_chosen(self):
-        #show what each player picked for said round 
-        pass
+        print(f"{self.player_one.name} picked {self.player_one.chosen_gesture}")
+        print(f"{self.player_two.name} picked {self.player_two.chosen_gesture}")
+
 
     def play_game(self):
         #call on player class to choose gesture
@@ -48,5 +52,8 @@ class Game:
         pass
 
     def display_winner(self):
-        #logic for if someone gets more then two wins they are the winner
-        pass
+        if self.player_one.score == 2:
+            print(f"{self.player_one.name} wins the game")
+
+        elif self.player_two.score == 2:
+            print(f"{self.player_two.name} wins the game")
