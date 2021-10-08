@@ -5,32 +5,37 @@ class Game:
     def __init__(self):
         self.player_one = Human
         self.player_two = None
-        
+        # self.player_one.score = 0
+        # self.player_two.score = 0
 
     def run_game(self):
         self.game_rules()
         self.multiplayer()
         
-        while self.player_one.score < 3 and self.player_two.score < 3:
-            self.play()
+        # while self.player_one.score < 2 or self.player_two.score < 2:
+        #     self.play_game()
 
-        self.diaplay_winner()
+        self.display_winner()
 
     def game_rules(self):
         print("welcome to Rock, Paper, Scissors, Lizard, Spock, the game of chance")
         print("The rules are similar to the childrens game Rock, Paper, Scissors")
         print("The gestures are: Rock, Paper, Scissors, Lizard, Spock")
-        print("Rock crushes Scissors n\ Scissors cuts paper n\ Paper covers Rock n\ Rock crushes Lizard n\ Lizard poisons Spock n\ Spock smashes Scissors n\ Scissors decapitates Lizard n\ Lizard eats Paper n\ Paper diproves Spock n\ Spcok vaporizes Rock")
+        print("Rock crushes Scissors \nScissors cuts paper \nPaper covers Rock \nRock crushes Lizard \nLizard poisons Spock \nSpock smashes Scissors \nScissors decapitates Lizard \nLizard eats Paper \nPaper diproves Spock \nSpock vaporizes Rock")
 
     
 
 
     def multiplayer(self):
-        #ask what player name is
-        #ask if how many players there are
-        #method for if one player
-        #method for two players 
-        pass
+        user_input = input("If you want to play singleplayer press 1 \nFor multiplayer press 2")
+        if user_input == "1":
+            self.player_one = Human()
+            self.player_two = AI()
+        elif user_input == "2":
+            self.player_one = Human()
+            self.player_two = Human()
+        else:
+            input("please enter 1 for single player or 2 for multiplayer")
 
     def player_chosen(self):
         #show what each player picked for said round 
