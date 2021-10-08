@@ -14,8 +14,12 @@ class Game:
         pass
 
     def game_rules(self):
-        # print a welcome/rules
-        pass
+        print("welcome to Rock, Paper, Scissors, Lizard, Spock, the game of chance")
+        print("The rules are similar to the childrens game Rock, Paper, Scissors")
+        print("The gestures are: Rock, Paper, Scissors, Lizard, Spock")
+        print("Rock crushes Scissors n\ Scissors cuts paper n\ Paper covers Rock n\ Rock crushes Lizard n\ Lizard poisons Spock n\ Spock smashes Scissors n\ Scissors decapitates Lizard n\ Lizard eats Paper n\ Paper diproves Spock n\ Spcok vaporizes Rock")
+
+    
 
 
     def multiplayer(self):
