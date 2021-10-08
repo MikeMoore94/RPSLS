@@ -1,10 +1,11 @@
 from ai import AI
 from human import Human
+from humantwo import HumanTwo
 
 class Game:
     def __init__(self):
         self.player_one = Human
-        self.player_two = None
+        self.player_two = HumanTwo
         # self.player_one.score = 0
         # self.player_two.score = 0
 
@@ -27,16 +28,16 @@ class Game:
 
 
     def multiplayer(self):
-        user_input = input("If you want to play singleplayer press 1 \nFor multiplayer press 2")
+        user_input = input("If you want to play singleplayer press 1 \nFor multiplayer press 2 ")
         if user_input == "1":
             self.player_one.name = input("Player 1 , enter your name: ")
             self.player_one = Human()
             self.player_two = AI()
         elif user_input == "2":
-            self.player_one.name = input("Player 1, enter your name")
+            self.player_one.name = input("Player 1, enter your name: ")
             self.player_one = Human()
-            self.player_two.name = input("Player 2, enter your name")
-            self.player_two = Human()
+            self.player_two.name = input("Player 2, enter your name: ")
+            self.player_two = HumanTwo()
         else:
             input("please enter 1 for single player or 2 for multiplayer")
 
