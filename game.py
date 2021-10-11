@@ -56,103 +56,102 @@ class Game:
                 self.player_one.choose_gesture()
                 self.player_two.choose_gesture()
                 
-                if self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture == "paper":
-                    self.player_chosen()
+                if self.player_one.chosen_gesture == "rock" and self.player_two.chosen_gesture == "paper":
                     self.player_two_win += 1
                     print("paper covers rock")
-                elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture == "sissors":
+                elif self.player_one.chosen_gesture == "rock" and self.player_two.chosen_gesture == "sissors":
                     self.player_chosen()
                     self.player_one_win += 1
                     print("rock smashes sissors")
-                elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture == "lizard":
+                elif self.player_one.chosen_gesture == "rock" and self.player_two.chosen_gesture == "lizard":
                     self.player_chosen()
                     self.player_one_win += 1
                     print("rock smashes lizard")
-                elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture == "spock":
+                elif self.player_one.chosen_gesture == "rock" and self.player_two.chosen_gesture == "spock":
                     self.player_chosen()
                     self.player_two_win += 1
                     print("spock destroys rock")
-                elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture == "rock":
+                elif self.player_one.chosen_gesture == "rock" and self.player_two.chosen_gesture == "rock":
                     self.player_chosen()
                     self.draw += 1
                     print("draw")
-                elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture == "rock":
+                elif self.player_one.chosen_gesture == "paper" and self.player_two.chosen_gesture == "rock":
                     self.player_chosen()
                     self.player_one_win += 1
                     print("paper covers rock")
-                elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture == "sissors":
+                elif self.player_one.chosen_gesture == "paper" and self.player_two.chosen_gesture == "sissors":
                     self.player_chosen()
                     self.player_two_win += 1
                     print("sissors cut paper")
-                elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture == "lizard":
+                elif self.player_one.chosen_gesture == "paper" and self.player_two.chosen_gesture == "lizard":
                     self.player_chosen()
                     self.player_two_win += 1
                     print("lizard eats paper")
-                elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture == "spock":
+                elif self.player_one.chosen_gesture == "paper" and self.player_two.chosen_gesture == "spock":
                     self.player_chosen()
                     self.player_one_win += 1
                     print("paper confuses spock")
-                elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture == "paper":
+                elif self.player_one.chosen_gesture == "paper" and self.player_two.chosen_gesture == "paper":
                     self.player_chosen()
                     self.draw += 1
                     print("draw")
-                elif self.player_one.chosen_gesture == "sissors" & self.player_two.chosen_gesture == "paper":
+                elif self.player_one.chosen_gesture == "sissors" and self.player_two.chosen_gesture == "paper":
                     self.player_chosen()
                     self.player_one_win += 1
                     print("sissors cut paper")
-                elif self.player_one.chosen_gesture == "sissors" & self.player_two.chosen_gesture == "rock":
+                elif self.player_one.chosen_gesture == "sissors" and self.player_two.chosen_gesture == "rock":
                     self.player_chosen()
                     self.player_two_win += 1
                     print("rock smashes sissors")
-                elif self.player_one.chosen_gesture == "sissors" & self.player_two.chosen_gesture == "lizard":
+                elif self.player_one.chosen_gesture == "sissors" and self.player_two.chosen_gesture == "lizard":
                     self.player_chosen()
                     self.player_one_win += 1
                     print("sissors cut lizards head off")
-                elif self.player_one.chosen_gesture == "sissors" & self.player_two.chosen_gesture == "spock":
+                elif self.player_one.chosen_gesture == "sissors" and self.player_two.chosen_gesture == "spock":
                     self.player_chosen()
                     self.player_two_win += 1
                     print("spock smashes sissors")
-                elif self.player_one.chosen_gesture == "sissors" & self.player_two.chosen_gesture == "sissors":
+                elif self.player_one.chosen_gesture == "sissors" and self.player_two.chosen_gesture == "sissors":
                     self.player_chosen()
                     self.draw += 1
                     print("draw")
-                elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture == "rock":
+                elif self.player_one.chosen_gesture == "lizard" and self.player_two.chosen_gesture == "rock":
                     self.player_chosen()
                     self.player_two_win += 1
                     print("rock smashes lizard")
-                elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture == "sissors":
+                elif self.player_one.chosen_gesture == "lizard" and self.player_two.chosen_gesture == "sissors":
                     self.player_chosen()
                     self.player_two_win += 1
                     print("sissors cut lizard")
-                elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture == "paper":
+                elif self.player_one.chosen_gesture == "lizard" and self.player_two.chosen_gesture == "paper":
                     self.player_chosen()
                     self.player_one_win += 1
                     print("lizard eats paper")
-                elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture == "spock":
+                elif self.player_one.chosen_gesture == "lizard" and self.player_two.chosen_gesture == "spock":
                     self.player_chosen()
                     self.player_one_win += 1
                     print("lizard poisons spock")
-                elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture == "lizard":
+                elif self.player_one.chosen_gesture == "lizard" and self.player_two.chosen_gesture == "lizard":
                     self.player_chosen()
                     self.draw += 1
                     print("draw")
-                elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture == "rock":
+                elif self.player_one.chosen_gesture == "spock" and self.player_two.chosen_gesture == "rock":
                     self.player_chosen()
                     self.player_one_win += 1
                     print("spock smashes rock")
-                elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture == "sissors":
+                elif self.player_one.chosen_gesture == "spock" and self.player_two.chosen_gesture == "sissors":
                     self.player_chosen()
                     self.player_one_win += 1
                     print("spock smashes sissors")
-                elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture == "paper":
+                elif self.player_one.chosen_gesture == "spock" and self.player_two.chosen_gesture == "paper":
                     self.player_chosen()
                     self.player_two_win += 1
                     print("paper confuses spock")
-                elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture == "lizard":
+                elif self.player_one.chosen_gesture == "spock" and self.player_two.chosen_gesture == "lizard":
                     self.player_chosen()
                     self.player_two_win += 1
                     print("lizard poisons spock")
-                elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture == "spock":
+                elif self.player_one.chosen_gesture == "spock" and self.player_two.chosen_gesture == "spock":
                     self.player_chosen()
                     self.draw += 1
                     print("draw")
@@ -162,103 +161,103 @@ class Game:
                 self.player_one.choose_gesture()
                 self.ai.choose_gesture()
 
-                if self.player_one.chosen_gesture == "rock" & self.ai.chosen_gesture == "paper":
+                if self.player_one.chosen_gesture == "rock" and self.ai.chosen_gesture == "paper":
                     self.ai_chosen()
                     self.ai_win += 1
                     print("paper covers rock")
-                elif self.player_one.chosen_gesture == "rock" & self.ai.chosen_gesture == "sissors":
+                elif self.player_one.chosen_gesture == "rock" and self.ai.chosen_gesture == "sissors":
                     self.ai_chosen()
                     self.player_one_win += 1
                     print("rock smashes sissors")
-                elif self.player_one.chosen_gesture == "rock" & self.ai.chosen_gesture == "lizard":
+                elif self.player_one.chosen_gesture == "rock" and self.ai.chosen_gesture == "lizard":
                     self.ai_chosen()
                     self.player_one_win += 1
                     print("rock smashes lizard")
-                elif self.player_one.chosen_gesture == "rock" & self.ai.chosen_gesture == "spock":
+                elif self.player_one.chosen_gesture == "rock" and self.ai.chosen_gesture == "spock":
                     self.ai_chosen()
                     self.ai_win += 1
                     print("spock destroys rock")
-                elif self.player_one.chosen_gesture == "rock" & self.ai.chosen_gesture == "rock":
+                elif self.player_one.chosen_gesture == "rock" and self.ai.chosen_gesture == "rock":
                     self.ai_chosen()
                     self.draw += 1
                     print("draw")
-                elif self.player_one.chosen_gesture == "paper" & self.ai.chosen_gesture == "rock":
+                elif self.player_one.chosen_gesture == "paper" and self.ai.chosen_gesture == "rock":
                     self.ai_chosen()
                     self.player_one_win += 1
                     print("paper covers rock")
-                elif self.player_one.chosen_gesture == "paper" & self.ai.chosen_gesture == "sissors":
+                elif self.player_one.chosen_gesture == "paper" and self.ai.chosen_gesture == "sissors":
                     self.ai_chosen()
                     self.ai_win += 1
                     print("sissors cut paper")
-                elif self.player_one.chosen_gesture == "paper" & self.ai.chosen_gesture == "lizard":
+                elif self.player_one.chosen_gesture == "paper" and self.ai.chosen_gesture == "lizard":
                     self.ai_chosen()
                     self.ai_win += 1
                     print("lizard eats paper")
-                elif self.player_one.chosen_gesture == "paper" & self.ai.chosen_gesture == "spock":
+                elif self.player_one.chosen_gesture == "paper" and self.ai.chosen_gesture == "spock":
                     self.ai_chosen()
                     self.player_one_win += 1
                     print("paper confuses spock")
-                elif self.player_one.chosen_gesture == "paper" & self.ai.chosen_gesture == "paper":
+                elif self.player_one.chosen_gesture == "paper" and self.ai.chosen_gesture == "paper":
                     self.ai_chosen()
                     self.draw += 1
                     print("draw")
-                elif self.player_one.chosen_gesture == "sissors" & self.ai.chosen_gesture == "paper":
+                elif self.player_one.chosen_gesture == "sissors" and self.ai.chosen_gesture == "paper":
                     self.ai_chosen()
                     self.player_one_win += 1
                     print("sissors cut paper")
-                elif self.player_one.chosen_gesture == "sissors" & self.ai.chosen_gesture == "rock":
+                elif self.player_one.chosen_gesture == "sissors" and self.ai.chosen_gesture == "rock":
                     self.ai_chosen()
                     self.ai_win += 1
                     print("rock smashes sissors")
-                elif self.player_one.chosen_gesture == "sissors" & self.ai.chosen_gesture == "lizard":
+                elif self.player_one.chosen_gesture == "sissors" and self.ai.chosen_gesture == "lizard":
                     self.ai_chosen()
                     self.player_one_win += 1
                     print("sissors cut lizards head off")
-                elif self.player_one.chosen_gesture == "sissors" & self.ai.chosen_gesture == "spock":
+                elif self.player_one.chosen_gesture == "sissors" and self.ai.chosen_gesture == "spock":
                     self.ai_chosen()
                     self.ai_win += 1
                     print("spock smashes sissors")
-                elif self.player_one.chosen_gesture == "sissors" & self.ai.chosen_gesture == "sissors":
+                elif self.player_one.chosen_gesture == "sissors" and self.ai.chosen_gesture == "sissors":
                     self.ai_chosen()
                     self.draw += 1
                     print("draw")
-                elif self.player_one.chosen_gesture == "lizard" & self.ai.chosen_gesture == "rock":
+                elif self.player_one.chosen_gesture == "lizard" and self.ai.chosen_gesture == "rock":
                     self.ai_chosen()
                     self.ai_win += 1
                     print("rock smashes lizard")
-                elif self.player_one.chosen_gesture == "lizard" & self.ai.chosen_gesture == "sissors":
+                elif self.player_one.chosen_gesture == "lizard" and self.ai.chosen_gesture == "sissors":
                     self.ai_chosen()
                     self.ai_win += 1
                     print("sissors cut lizard")
-                elif self.player_one.chosen_gesture == "lizard" & self.ai.chosen_gesture == "paper":
+                elif self.player_one.chosen_gesture == "lizard" and self.ai.chosen_gesture == "paper":
                     self.ai_chosen()
                     self.player_one_win += 1
                     print("lizard eats paper")
-                elif self.player_one.chosen_gesture == "lizard" & self.ai.chosen_gesture == "spock":
+                elif self.player_one.chosen_gesture == "lizard" and self.ai.chosen_gesture == "spock":
                     self.ai_chosen()
                     self.player_one_win += 1
                     print("lizard poisons spock")
-                elif self.player_one.chosen_gesture == "lizard" & self.ai.chosen_gesture == "lizard":
+                elif self.player_one.chosen_gesture == "lizard" and self.ai.chosen_gesture == "lizard":
                     self.ai_chosen()
                     self.draw += 1
                     print("draw")
-                elif self.player_one.chosen_gesture == "spock" & self.ai.chosen_gesture == "rock":
+                elif self.player_one.chosen_gesture == "spock" and self.ai.chosen_gesture == "rock":
                     self.ai_chosen()
                     self.player_one_win += 1
                     print("spock smashes rock")
-                elif self.player_one.chosen_gesture == "spock" & self.ai.chosen_gesture == "sissors":
+                elif self.player_one.chosen_gesture == "spock" and self.ai.chosen_gesture == "sissors":
                     self.ai_chosen()
                     self.player_one_win += 1
                     print("spock smashes sissors")
-                elif self.player_one.chosen_gesture == "spock" & self.ai.chosen_gesture == "paper":
+                elif self.player_one.chosen_gesture == "spock" and self.ai.chosen_gesture == "paper":
                     self.ai_chosen()
                     self.ai_win += 1
                     print("paper confuses spock")
-                elif self.player_one.chosen_gesture == "spock" & self.ai.chosen_gesture == "lizard":
+                elif self.player_one.chosen_gesture == "spock" and self.ai.chosen_gesture == "lizard":
                     self.ai_chosen()
                     self.ai_win += 1
                     print("lizard poisons spock")
-                elif self.player_one.chosen_gesture == "spock" & self.ai.chosen_gesture == "spock":
+                elif self.player_one.chosen_gesture == "spock" and self.ai.chosen_gesture == "spock":
                     self.ai_chosen()
                     self.draw += 1
                     print("draw")
